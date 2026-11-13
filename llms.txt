@@ -1,0 +1,26 @@
+# Symmetry-Verified-Transport
+
+Scientific question: how much useful density-wave information can global charge verification retain in noisy stochastic exchange dynamics, with rejected attempts counted?
+
+## Reading routes
+
+- Story and principal statements: README.md, then science/README.md.
+- Exact experiment, accessible records, noise convention and charged resources: science/model.md.
+- Pass probability, conditional kernel and harmonic eigenvalues: science/conditional_dynamics.md.
+- Every-cadence gain/acceptance bound, randomized schedules and restoration limit: science/cadence_tradeoff.md.
+- Full retained-bitstring local information and the attainable raw moment estimator: science/information.md.
+- Finite-sample minimax lower bound and clipped raw estimator: science/finite_sample.md.
+- Complete four-spin arithmetic example: science/worked_example.md.
+- Coherent-control escape, two-spin exception and transport-inference boundaries: science/controls_and_limits.md.
+- Primary comparisons and inherited ingredients: references/RELATED_WORK.md and references/references.bib.
+- Reproduction commands, actual outputs and finite-check scope: verification/README.md.
+
+## Essential distinctions
+
+- The permitted dynamics is stochastic-SWAP/SSEP, not every number-conserving Hamiltonian.
+- All initialized attempts count, including rejected ones. The main readout is at the fixed final time; initial or intermediate microscopic records are not supplied.
+- Correct total charge in every accepted shot does not establish restored spatial density information.
+- The local information theorem concerns the specified weak initial amplitude family at zero amplitude. Finite-sample bounds retain their actual amplitude interval and accuracy scale.
+- Global signal-restoration cost is not an unrestricted lower bound on learning a diffusion coefficient.
+- Additional coherent encoding/recovery changes the operational task. Its explicit escape is part of the scope, not a contradiction of the restricted theorem.
+- Independent finite calculations support conventions and examples; the analytical proofs establish the quantified results.
