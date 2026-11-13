@@ -18,7 +18,7 @@ The bound also covers independently randomized schedules. A postselection gain $
 
 For $`N\ge2`$, the tradeoff has a stronger estimation consequence. At zero input amplitude in the declared weak density-amplitude experiment, the entire accepted bitstring, the check record and the known schedule give no more local Fisher information per initialized attempt than a simple raw density-moment estimator without checks. The [finite-sample account](science/finite_sample.md) gives a bounded-factor minimax mean-square-error comparison without assuming unbiased estimators.
 
-At the longest diffusive time $`T=\Theta(L^2/D)`$, retaining any fixed fraction of the ideal density signal at fixed positive noise rate requires
+At the longest diffusive time $`T=\Theta(L^2/D)`$, retaining any fixed fraction of the ideal density signal at fixed positive $`D,\gamma`$ as $`L\to\infty`$ requires
 
 ```math
 P^{-1}=\exp\!\left[\Omega\!\left(\frac{\gamma L^3}{D}\right)\right].
@@ -39,7 +39,13 @@ This is the cost of retained-signal restoration. It is not a lower bound for eve
 | Which additional controls escape the result? | [Controls and limits](science/controls_and_limits.md) |
 | Which ingredients are inherited? | [Related work](references/RELATED_WORK.md) |
 
-The [scientific overview](science/README.md) connects these chapters. The [LLM reading guide](llms.txt) maps technical questions to their proof sources.
+The [scientific overview](science/README.md) connects these chapters. For a guided route through the prerequisites and the result, start with the [learning overview](learning/README.md). The [LLM reading guide](llms.txt) maps technical questions to their proof sources.
+
+## Learn the argument
+
+The educational anchor is **John Watrous, *The Theory of Quantum Information* (Cambridge University Press, 2018)**: [book record](https://doi.org/10.1017/9781316848142) · [author's book page](https://cs.uwaterloo.ca/~watrous/TQI/). The [source-to-project bridge](learning/anchor_bridge.md) connects its treatment of channels, measurements and distinguishability to this transport experiment, then identifies the conditional-kernel, cadence and estimation arguments supplied here.
+
+The [30-milestone map](learning/milestones.md) gives a reader-independent path from those foundations to the full result and its control boundaries. Use the [learning overview](learning/README.md) to choose an entry point, or go directly to the scientific chapters above.
 
 ## Reproduce
 
