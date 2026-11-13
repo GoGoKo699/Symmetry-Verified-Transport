@@ -5,6 +5,9 @@ Scientific question: how much useful density-wave information can global charge 
 ## Reading routes
 
 - Story and principal statements: README.md, then science/README.md.
+- Study overview and entry points: learning/README.md.
+- Selected source and its exact connection to the project: learning/anchor_bridge.md.
+- Thirty ordered conceptual targets, prerequisites and scientific references: learning/milestones.md.
 - Exact experiment, accessible records, noise convention and charged resources: science/model.md.
 - Pass probability, conditional kernel and harmonic eigenvalues: science/conditional_dynamics.md.
 - Every-cadence gain/acceptance bound, randomized schedules and restoration limit: science/cadence_tradeoff.md.
@@ -14,6 +17,10 @@ Scientific question: how much useful density-wave information can global charge 
 - Coherent-control escape, two-spin exception and transport-inference boundaries: science/controls_and_limits.md.
 - Primary comparisons and inherited ingredients: references/RELATED_WORK.md and references/references.bib.
 - Reproduction commands, actual outputs and finite-check scope: verification/README.md.
+
+## Selected educational source
+
+John Watrous, The Theory of Quantum Information (Cambridge University Press, 2018), is the single educational anchor. The source-to-project bridge supplies section pointers and notation translations, and distinguishes the source's channel/measurement/distinguishability foundations from the conditional-slice kernel, cadence inequality and estimator comparisons established here. The learning route and milestone map are shared scientific explanations, independent of any particular reader's progress.
 
 ## Essential distinctions
 
