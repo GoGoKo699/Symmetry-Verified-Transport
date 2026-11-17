@@ -25,7 +25,7 @@ The unknown parameter is the initial amplitude $`u`$ in the supplied diagonal st
 Put
 ```math
 F=\max_{x\in\Omega_N}|f(x)|,\qquad
-u_*=\frac{\beta}{F},\qquad 0<\beta<1,
+u_*=\frac{\beta}{F},\qquad 0\lt \beta\lt 1,
 ```
 and restrict $`|u|\le u_*`$. Thus the initial likelihood ratio lies between $`1-\beta`$ and $`1+\beta`$.
 
@@ -38,8 +38,8 @@ Every schedule includes a final charge check at $`T`$. A checked attempt returns
 For $`i\ne j`$, the half-filled canonical distribution has
 ```math
 \mathbb E_{\mu_N}x_i=\tfrac12,\quad
-\operatorname{Var}_{\mu_N}(x_i)=\tfrac14,\quad
-\operatorname{Cov}_{\mu_N}(x_i,x_j)=-\frac{1}{4(2N-1)}.
+\mathrm{Var}_{\mu_N}(x_i)=\tfrac14,\quad
+\mathrm{Cov}_{\mu_N}(x_i,x_j)=-\frac{1}{4(2N-1)}.
 ```
 Consequently
 ```math
@@ -119,7 +119,7 @@ a_N(s)&:=\frac{2N-1+s^2}{2N}\le1.
 The full raw channel commutes with global complementation. Its expectation of the even function $`f(Y)^2`$ has zero overlap with the odd initial perturbation $`\mu_N f`$. Thus, exactly throughout the affine family,
 ```math
 \mathbb E_u f(Y)^2=W,\qquad
-\operatorname{Var}_u[f(Y)]
+\mathrm{Var}_u[f(Y)]
 =W-u^2s^2h^2V^2.
 ```
 

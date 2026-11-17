@@ -90,7 +90,7 @@ Repeated checks can improve it. With $`s_i=e^{-2\gamma\Delta_i}`$,
 \le\prod_i s_i=s.
 ```
 
-The inequality is $`2s_i\le1+s_i^2`$. Equally spaced checks approach equality as spacing tends to zero at fixed $`T`$. The frequent-check limit achieves $`s\,h(T)^2`$, strictly larger than the raw value for $`0<s<1`$. A size-independent assertion that verification never improves this information would be false.
+The inequality is $`2s_i\le1+s_i^2`$. Equally spaced checks approach equality as spacing tends to zero at fixed $`T`$. The frequent-check limit achieves $`s\,h(T)^2`$, strictly larger than the raw value for $`0\lt s\lt 1`$. A size-independent assertion that verification never improves this information would be false.
 
 ## Finer measurements and feedback change the target or resources
 

@@ -22,8 +22,8 @@ Start with the state/channel/measurement entries for the physical experiment. Us
 | Book language | Project language and meaning |
 |---|---|
 | A register with a classical state set | The spin chain has occupation strings $`x\in\{0,1\}^{2N}`$. The allowed initial strings lie in $`\Omega_N=\{x:\sum_jx_j=N\}`$. |
-| Standard basis vectors $`e_x`$ | The repository writes $`|x\rangle`$; $`e_xe_x^*`$ becomes $`|x\rangle\langle x|`$. |
-| A state $`\rho\in\mathrm D(\mathcal X)`$ | A probability law $`q(x)`$ becomes $`\rho=\sum_xq(x)|x\rangle\langle x|`$. The channel identities also cover coherent balanced-sector states. |
+| Standard basis vectors $`e_x`$ | The repository writes $`\lvert x\rangle`$; $`e_xe_x^*`$ becomes $`\lvert x\rangle\langle x\rvert`$. |
+| A state $`\rho\in\mathrm D(\mathcal X)`$ | A probability law $`q(x)`$ becomes $`\rho=\sum_xq(x)\lvert x\rangle\langle x\rvert`$. The channel identities also cover coherent balanced-sector states. |
 | A channel $`\Phi`$ and adjoint $`\Phi^*`$ | The noise channel is $`\mathcal E_p`$; the repository uses $`\dagger`$ for an adjoint acting on observables. |
 | Instrument branches $`\Phi_a`$ | The charge-$`q`$ branch is $`\rho\mapsto\Pi_q\rho\Pi_q`$. Its trace is the outcome probability. |
 | A measurement often denoted $`\mu`$ | Here $`\mu_N`$ instead means the uniform half-filled state or law; charge projectors are $`\Pi_q`$. |
@@ -120,9 +120,9 @@ For $`N\ge2`$, the same inequality implies $`PA_1^2\le s^2`$. It is this model-s
 
 ## From local sensitivity to finite-sample inference
 
-Watrous's binary-discrimination theorem connects distinguishability with testing. For classical distributions, the relevant distance is $`\operatorname{TV}(p,q)=\frac12\sum_y|p(y)-q(y)|`$. With equal priors, the smallest testing error is $`(1-\operatorname{TV})/2`$.
+Watrous's binary-discrimination theorem connects distinguishability with testing. For classical distributions, the relevant distance is $`\mathrm{TV}(p,q)=\frac12\sum_y|p(y)-q(y)|`$. With equal priors, the smallest testing error is $`(1-\mathrm{TV})/2`$.
 
-The book's classical Pinsker theorem becomes $`\operatorname{TV}^2\le D_{\rm KL}/2`$ after converting its base-two entropy to natural logarithms. The project's likelihood calculation bounds the divergence between two amplitudes $`+v`$ and $`-v`$ by
+The book's classical Pinsker theorem becomes $`\mathrm{TV}^2\le D_{\rm KL}/2`$ after converting its base-two entropy to natural logarithms. The project's likelihood calculation bounds the divergence between two amplitudes $`+v`$ and $`-v`$ by
 
 ```math
 D_{\rm KL}(\mathsf P_{+v}^{(m)}\Vert\mathsf P_{-v}^{(m)})
@@ -130,7 +130,7 @@ D_{\rm KL}(\mathsf P_{+v}^{(m)}\Vert\mathsf P_{-v}^{(m)})
 S=s^2h^2V.
 ```
 
-Here $`m`$ counts all initialized attempts. The source interval is $`|u|\le u_*:=\beta/F`$, where $`F=\max_{\Omega_N}|f|`$ and $`0<\beta<1`$. This margin keeps likelihoods positive. It can shrink with size for an unnormalized Fourier sum.
+Here $`m`$ counts all initialized attempts. The source interval is $`|u|\le u_*:=\beta/F`$, where $`F=\max_{\Omega_N}|f|`$ and $`0\lt \beta\lt 1`$. This margin keeps likelihoods positive. It can shrink with size for an unnormalized Fourier sum.
 
 The proof expands conditional transcript probabilities, so it also handles schedules chosen from earlier attempts' records. Small divergence means the two amplitudes remain hard to tell apart. Any accurate estimate would determine their sign, which turns the testing bound into the minimax risk bound
 

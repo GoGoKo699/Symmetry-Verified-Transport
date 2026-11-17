@@ -9,10 +9,10 @@ Write $`p=(1-e^{-2\gamma\Delta})/2`$ for an interval of duration $`\Delta`$, and
 ```math
 \mathcal E_p
  =\bigotimes_{j=1}^{2N}
- \bigl((1-p)\operatorname{id}+p\,\operatorname{Ad}_{X_j}\bigr).
+ \bigl((1-p)\mathrm{id}+p\,\mathrm{Ad}_{X_j}\bigr).
 ```
 
-Starting from a basis configuration with $`N`$ occupied sites, let $`A`$ count flips of initially occupied sites and $`B`$ flips of initially empty sites. Then $`A,B`$ are independent $`\operatorname{Bin}(N,p)`$ variables and the final charge is $`N-A+B`$. Returning to charge $`N`$ therefore has probability
+Starting from a basis configuration with $`N`$ occupied sites, let $`A`$ count flips of initially occupied sites and $`B`$ flips of initially empty sites. Then $`A,B`$ are independent $`\mathrm{Bin}(N,p)`$ variables and the final charge is $`N-A+B`$. Returning to charge $`N`$ therefore has probability
 
 ```math
 P_N(p)
@@ -24,7 +24,7 @@ P_N(p)
 It depends on the input charge, not the occupied positions. For an arbitrary quantum input $`\rho=\Pi_N\rho\Pi_N`$, the charge measurement depends only on its computational-basis diagonal. Thus the same probability holds for every such density operator:
 
 ```math
-\operatorname{tr}\!\left[\Pi_N\mathcal E_p(\rho)\right]=P_N(p).
+\mathrm{tr}\!\left[\Pi_N\mathcal E_p(\rho)\right]=P_N(p).
 ```
 
 The retained normalized map is consequently a linear channel on the balanced sector:
@@ -196,13 +196,13 @@ For one interval, not only the pass probability but the entire total-charge law 
 ```math
 \Pr(Q_{\mathrm{out}}=q_{\mathrm{out}})
  =\Pr(N-A+B=q_{\mathrm{out}}),
- \qquad A,B\overset{\mathrm{ind}}{\sim}\operatorname{Bin}(N,p).
+ \qquad A,B\overset{\mathrm{ind}}{\sim}\mathrm{Bin}(N,p).
 ```
 
 After every successful check, the normalized state is again supported on the balanced sector. The probability that the first failure is at check $`i`$ and has charge $`q_{\mathrm{out}}\ne N`$ is therefore
 
 ```math
-\left(\prod_{j<i}P_N(p_j)\right)
+\left(\prod_{j\lt i}P_N(p_j)\right)
 \Pr\!\left(N-A_i+B_i=q_{\mathrm{out}}\right).
 ```
 
@@ -217,7 +217,7 @@ At $`p=0`$, $`P_M=1`$ and $`\lambda_r=1`$. At finite $`\gamma\Delta`$, every $`P
 ```math
 P_1(p)=\frac{1+s^2}{2},\qquad
 \lambda_1(p)=\frac{2s}{1+s^2}
- =\operatorname{sech}(2\gamma\Delta),
+ =\mathrm{sech}(2\gamma\Delta),
 \qquad s=e^{-2\gamma\Delta}.
 ```
 
