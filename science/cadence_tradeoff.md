@@ -29,7 +29,7 @@ The statement is exact at finite $`N,T`$. It does not require equally spaced che
 ```math
 P_M=\mathbb E[W^M],\qquad
 W=1-4p(1-p)\sin^2(\Phi/2)\in[0,1],
-\qquad \Phi\sim\operatorname{Unif}[-\pi,\pi].
+\qquad \Phi\sim\mathrm{Unif}[-\pi,\pi].
 ```
 
 Hölder's inequality gives log-convexity of these moments. Applying it between exponents zero and $`N`$ yields
@@ -74,7 +74,7 @@ Then
 
 A fixed gain $`G_1>1`$ in a linear density mode requires at least $`G_1^N`$ initialized attempts per accepted output. Charging only accepted outputs would omit this factor.
 
-Equivalently, requiring $`A_r\geq a`$ with $`0<a\leq1`$ forces
+Equivalently, requiring $`A_r\geq a`$ with $`0\lt a\leq1`$ forces
 
 ```math
 P\leq a^{-N/r}e^{-2N\gamma T}.
@@ -179,7 +179,7 @@ An elementary proof bounds the Fourier integral. On $`[-\pi,\pi]`$,
 
 so the integrand is bounded above by $`\exp[-4Mp(1-p)\phi^2/\pi^2]`$. For the lower bound, restrict to $`|\phi|\leq(1+Mp(1-p))^{-1/2}`$, use $`\sin^2(\phi/2)\leq\phi^2/4`$, and bound the resulting power below by a positive constant. Together with $`P_M\leq1`$, these estimates give the stated comparison.
 
-At fixed $`0<p<1/2`$, the integrand has a unique maximum on the integration circle, with local form $`1-p(1-p)\phi^2+O(\phi^4)`$. Laplace's method gives
+At fixed $`0\lt p\lt 1/2`$, the integrand has a unique maximum on the integration circle, with local form $`1-p(1-p)\phi^2+O(\phi^4)`$. Laplace's method gives
 
 ```math
 P_M(p)\sim\frac1{\sqrt{4\pi Mp(1-p)}},

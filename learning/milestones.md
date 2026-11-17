@@ -75,7 +75,7 @@ The map provides a connected understanding of the result. It does not replace ev
 ### M09 — A small density wave is a specified statistical source
 
 - **Central question:** What exactly is unknown in the amplitude experiment?
-- **Understanding target:** Explain the source $`\mu_N(1+uf)`$, variance $`V`$, and positivity interval $`|u|\leq\beta/\|f\|_\infty`$; retain its possible size dependence.
+- **Understanding target:** Explain the source $`\mu_N(1+uf)`$, variance $`V`$, and positivity interval $`|u|\leq\beta/‖f‖_\infty`$; retain its possible size dependence.
 - **Dependencies and story role:** M02, M06, M08. Turns a qualitative density signal into a precise input promise.
 - **Conceptual connection:** Linear response is an explicit family of positive states, not permission to assume a fixed macroscopic modulation at every size.
 - **Sources:** Watrous sections 1.2.2, 2.1.1–2.1.2; [amplitude family](../science/information.md#the-fixed-late-readout-experiment); [susceptibility](../science/information.md#canonical-susceptibility).

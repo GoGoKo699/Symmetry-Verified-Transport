@@ -75,7 +75,7 @@ This argument uses random permutations as the transport operations. A generic ch
 A deterministic protocol chooses a finite partition
 
 ```math
-0=t_0<t_1<\cdots<t_m=T,\qquad
+0=t_0\lt t_1\lt \cdots\lt t_m=T,\qquad
 \Delta_i=t_i-t_{i-1}.
 ```
 
@@ -126,11 +126,11 @@ The density-amplitude experiment supplies independent fresh copies of
 \mu_N=\frac{\Pi_N}{\binom{2N}{N}}.
 ```
 
-Fix $`0<\beta<1`$ and restrict the unknown amplitude to
+Fix $`0\lt \beta\lt 1`$ and restrict the unknown amplitude to
 
 ```math
-|u|\leq\frac{\beta}{\|f\|_\infty},\qquad
-\|f\|_\infty=\max_{x\in\Omega_N}|f(x)|.
+|u|\leq\frac{\beta}{‖f‖_\infty},\qquad
+‖f‖_\infty=\max_{x\in\Omega_N}|f(x)|.
 ```
 
 This gives a positive input law with a uniform denominator margin. The allowed amplitude interval can shrink with $`L`$ for an unnormalized extensive mode. Uniform finite-parameter claims must retain that dependence, or explicitly rescale the mode. The exact local information comparison is at $`u=0`$.

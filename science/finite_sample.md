@@ -10,7 +10,7 @@ s=e^{-2\gamma T},\qquad
 V=\mathbb E_{\mu_N}f^2,\qquad
 S=s^2h^2V>0.
 ```
-For $`F=\max_{\Omega_N}|f|`$ and fixed $`0<\beta<1`$, the source family is
+For $`F=\max_{\Omega_N}|f|`$ and fixed $`0\lt \beta\lt 1`$, the source family is
 ```math
 \Pr_u(X=x)=\mu_N(x)[1+u f(x)],\qquad
 |u|\le u_*:=\frac{\beta}{F}.
@@ -31,7 +31,7 @@ All lower bounds below are uniform over $`\mathcal P`$. The raw upper bound uses
 
 ## A finite two-point distinguishability bound
 
-Consider two source amplitudes $`u=+v`$ and $`u=-v`$, where $`0<v\le u_*`$. For one fixed schedule, put $`b=hA`$. Its successful bitstring distribution is
+Consider two source amplitudes $`u=+v`$ and $`u=-v`$, where $`0\lt v\le u_*`$. For one fixed schedule, put $`b=hA`$. Its successful bitstring distribution is
 ```math
 q_{\pm v}(y)=\mu_N(y)[1\pm v b f(y)],
 ```
@@ -48,10 +48,10 @@ D_{\mathrm{KL}}(\mathsf P_{+v}\Vert\mathsf P_{-v})
 =P\,\mathbb E_{\mu_N}
 \left[a\log\frac{1+a}{1-a}\right].
 ```
-For $`|a|\le\beta<1`$,
+For $`|a|\le\beta\lt 1`$,
 ```math
 0\le a\log\frac{1+a}{1-a}
-=2a\operatorname{atanh}a
+=2a\mathrm{atanh}a
 \le\frac{2a^2}{1-\beta^2}.
 ```
 The cadence bound $`PA^2\le s^2`$ therefore gives
@@ -91,16 +91,16 @@ u_*^2,\,
 \frac{1-\beta^2}{4mS}
 \right\}.
 ```
-The preceding divergence is at most $`1/2`$. Pinsker's inequality gives total variation distance at most $`1/2`$. Threshold any estimator at zero to test the two hypotheses $`\pm v`$. On a wrong-sign decision, its squared estimation error is at least $`v^2`$. The equal-prior testing error is at least $`(1-\operatorname{TV})/2`$, so
+The preceding divergence is at most $`1/2`$. Pinsker's inequality gives total variation distance at most $`1/2`$. Threshold any estimator at zero to test the two hypotheses $`\pm v`$. On a wrong-sign decision, its squared estimation error is at least $`v^2`$. The equal-prior testing error is at least $`(1-\mathrm{TV})/2`$, so
 ```math
 \sup_{u\in\{-v,+v\}}
 \mathbb E_u[(\widehat u-u)^2]
-\ge\frac{v^2}{2}(1-\operatorname{TV})
+\ge\frac{v^2}{2}(1-\mathrm{TV})
 \ge\frac{v^2}{4}.
 ```
 The two hypotheses lie inside the declared interval. This proves the bound for biased as well as unbiased estimators.
 
-A related bounded-error statement follows directly. If a test of $`\pm v`$ has worst-case error at most $`\delta<1/2`$, then $`\operatorname{TV}\ge1-2\delta`$. Combining this with Pinsker and the same divergence bound requires
+A related bounded-error statement follows directly. If a test of $`\pm v`$ has worst-case error at most $`\delta\lt 1/2`$, then $`\mathrm{TV}\ge1-2\delta`$. Combining this with Pinsker and the same divergence bound requires
 ```math
 m\ge
 \frac{(1-\beta^2)(1-2\delta)^2}{v^2S}.
@@ -138,7 +138,7 @@ Here the notation includes using zero when its displayed guarantee is smaller. E
 
 ## What is matched
 
-For a target MSE $`\epsilon^2<u_*^2/4`$, every checked protocol needs
+For a target MSE $`\epsilon^2\lt u_*^2/4`$, every checked protocol needs
 ```math
 m\ge\frac{1-\beta^2}{16S\epsilon^2},
 ```
